@@ -29,3 +29,7 @@ jobs:
       run: |
         pip install -r requirement.txt
         pytest
+    - name: Deploy
+      run: |
+        whoami
+        pwd
