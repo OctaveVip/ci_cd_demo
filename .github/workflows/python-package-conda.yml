@@ -31,5 +31,8 @@ jobs:
         pytest
     - name: Deploy
       run: |
-        whoami
+        cd /home/ubuntu/ci_cd_demo
         pwd
+        conda activate python37
+        pip isnstall -r requirement.txt
+        pm2 start main.py ~/miniconda/envs/python37/bin/python --name demo
