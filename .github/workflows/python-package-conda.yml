@@ -33,8 +33,7 @@ jobs:
       run: |
         cd /home/ubuntu/ci_cd_demo
         pwd
-        conda init zsh
-        source ~/.zshrc
+        conda init bash
         conda activate python37
         pip isnstall -r requirement.txt
         pm2 start main.py ~/miniconda/envs/python37/bin/python --name demo
