@@ -10,9 +10,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Change to zsh
+    - name: Display the path
       run: |
-        source ~/.zshrc
+        echo $ZSH_NAME $ZSH_VERSION
+      shell: zsh {0}
     - name: Set up Python 3.7
       uses: actions/setup-python@v3
       with:
