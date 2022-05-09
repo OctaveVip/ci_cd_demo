@@ -10,6 +10,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Change to zsh
+      run: |
+        source ~/.zshrc
     - name: Set up Python 3.7
       uses: actions/setup-python@v3
       with:
