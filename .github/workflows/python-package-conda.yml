@@ -32,4 +32,4 @@ jobs:
     - name: Deploy
       run: |
         cd /home/ubuntu/ci_cd_demo
-        pm2 start main.py ~/miniconda/envs/python37/bin/python --name demo
+        pm2 restart demo
